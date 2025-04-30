@@ -98,3 +98,17 @@ Wed, Apr 30, 2025  9:04:40 AM:
  tests:  11|6
 total_score: 15/70
 a8dc7dc
+Wed, Apr 30, 2025  9:11:23 AM: 
+ treemap.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:78:28: error: 'key' undeclared (first use in this function)
+     if(searchTreeMap(tree, key) != NULL) return;
+                            ^~~
+treemap.c:78:28: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:81:45: error: 'value' undeclared (first use in this function)
+     TreeNode* newNode = createTreeNode(key, value);
+                                             ^~~~~
+e4793a3
