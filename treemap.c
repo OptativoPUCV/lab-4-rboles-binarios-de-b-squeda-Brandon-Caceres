@@ -189,7 +189,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     TreeNode * node = tree->current;
     
     if (node->right != NULL){
-        node = node->right
+        node = node->right;
         while(node->left != NULL){
             node = node->left;
         }
