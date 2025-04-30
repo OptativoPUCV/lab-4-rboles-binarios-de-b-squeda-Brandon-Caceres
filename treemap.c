@@ -75,14 +75,14 @@ TreeNode * minimum(TreeNode * x){
 
 void removeNode(TreeMap * tree, TreeNode* node) {
     if(tree == NULL) return;
-    if(searchTreeMap(tree, key) != NULL) return;
+    if(searchTreeMap(tree, node->pair->key) != NULL) return;
 
     TreeNode* parent = tree->current;
-    TreeNode* newNode = createTreeNode(key, value);
+    TreeNode* newNode = createTreeNode(node->pair->key, node->pair->value);
     newNode->parent = parent;
 
     while(parent != NULL) {
-        if (tree->lower_than(key, parent->pair->key)) {
+        if (tree->lower_than(node->pair->key, parent->pair->key)) {
             parent = parent->left;
         } else {
             parent = parent->right;
