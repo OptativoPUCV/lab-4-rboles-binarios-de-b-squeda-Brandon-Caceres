@@ -41,3 +41,20 @@ treemap.c:57:15: error: variable 'parent' set but not used [-Werror=unused-but-s
                ^~~~~~
 cc1.exe: all warnings being treated as errors
 28d0aef
+Wed, Apr 30, 2025  8:55:28 AM: 
+ treemap.c | 5 -----
+ 1 file changed, 5 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:50:30: error: 'return' with a value, in function returning void [-Werror]
+     if (tree == NULL) return NULL;
+                              ^~~~
+treemap.c:49:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+treemap.c:52:15: error: variable 'parent' set but not used [-Werror=unused-but-set-variable]
+     TreeNode* parent = NULL;
+               ^~~~~~
+cc1.exe: all warnings being treated as errors
+c5a6863
