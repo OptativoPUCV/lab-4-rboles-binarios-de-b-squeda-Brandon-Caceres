@@ -192,3 +192,13 @@ Wed, Apr 30, 2025 11:20:28 AM:
  tests:  18|3
 total_score: 40/70
 098c50f
+Wed, Apr 30, 2025 11:30:08 AM: 
+ treemap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'firstTreeMap':
+treemap.c:173:30: error: 'TreeMap {aka struct TreeMap}' has no member named 'round'
+     TreeNode * current = tree->round;
+                              ^~
+903edc1
