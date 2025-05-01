@@ -261,3 +261,9 @@ ju.,  1 de may. de 2025 18:37:06:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 40c0791
+ju.,  1 de may. de 2025 18:38:17: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  29|0
+total_score: 70/70
+8dfd095
