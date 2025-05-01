@@ -168,11 +168,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode * result = NULL;
 
     while(node != NULL){
-        if (key < node->pair->key){
+        if (tree->lower_than(key, node->pair->key)){
             result = node;
             node = node->left;
         }
-        else if(key > node->pair->key){
+        else if(tree->lower_than(key, node->pair->key)){
             node = node->right;
         }
         else{
