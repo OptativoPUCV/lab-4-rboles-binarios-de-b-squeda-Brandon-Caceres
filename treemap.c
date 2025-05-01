@@ -176,11 +176,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
             node = node->right;
         }
         else{
-            return node;
+            return node->pair;
         }
     }
 
-    return result;
+    return result->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
